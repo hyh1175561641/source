@@ -430,13 +430,13 @@ LUA_API void (lua_closeslot) (lua_State *L, int idx);
 
 /*
 ** {======================================================================
-** Debug API
+** Debug API 调试接口
 ** =======================================================================
 */
 
 
 /*
-** Event codes
+** Event codes 事件代码
 */
 #define LUA_HOOKCALL	0
 #define LUA_HOOKRET	1

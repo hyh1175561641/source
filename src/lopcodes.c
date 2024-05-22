@@ -13,8 +13,20 @@
 #include "lopcodes.h"
 
 
-/* ORDER OP */
-
+/* ORDER OP 操作指令 */
+/* Value = {
+ * 8, 10, 10, 9, 9, 8, 8, 8, 8, 8,
+ * 0, 8, 8, 8, 8, 0, 0, 0, 0, 8,
+ * 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,
+ * 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,
+ * 8, 8, 8, 8, 8, 8, 128, 128, 128, 8,
+ * 8, 8, 8, 8, 0, 0, 4, 16, 16, 16,
+ * 16, 16, 16, 16, 16, 16, 16, 24, 104, 104,
+ * 32, 0, 0, 9, 9, 1, 0, 9, 32, 9,
+ * 72, 40, 3}
+*/
+// lu_byte unsigned char    NUM_OPCODES 83
+// const unsigned char luaP_opmodes[83] = {}
 LUAI_DDEF const lu_byte luaP_opmodes[NUM_OPCODES] = {
 /*       MM OT IT T  A  mode		   opcode  */
   opmode(0, 0, 0, 0, 1, iABC)		/* OP_MOVE */

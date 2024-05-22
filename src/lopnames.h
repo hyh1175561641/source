@@ -10,7 +10,7 @@
 #include <stddef.h>
 
 
-/* ORDER OP */
+/* ORDER OP 命令操作*/
 
 static const char *const opnames[] = {
   "MOVE",

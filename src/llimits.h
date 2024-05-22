@@ -32,7 +32,7 @@ typedef long l_mem;
 #endif				/* } */
 
 
-/* chars used as small naturals (so that 'char' is reserved for characters) */
+/* chars used as small naturals (so that 'char' is reserved for characters) 用作小自然数的字符(所以char是为字符保留)*/
 typedef unsigned char lu_byte;
 typedef signed char ls_byte;
 
@@ -132,19 +132,19 @@ typedef LUAI_UACINT l_uacInt;
 #endif
 
 
-/* type casts (a macro highlights casts in the code) */
-#define cast(t, exp)	((t)(exp))
+/* type casts (a macro highlights casts in the code) 类型转换 (一个宏高亮转换在代码中)*/
+#define cast(t, exp)	((t)(exp)) // 类型强制转换
 
-#define cast_void(i)	cast(void, (i))
-#define cast_voidp(i)	cast(void *, (i))
-#define cast_num(i)	cast(lua_Number, (i))
-#define cast_int(i)	cast(int, (i))
-#define cast_uint(i)	cast(unsigned int, (i))
-#define cast_byte(i)	cast(lu_byte, (i))
-#define cast_uchar(i)	cast(unsigned char, (i))
-#define cast_char(i)	cast(char, (i))
-#define cast_charp(i)	cast(char *, (i))
-#define cast_sizet(i)	cast(size_t, (i))
+#define cast_void(i)	cast(void, (i)) // 强制转换为 void
+#define cast_voidp(i)	cast(void *, (i)) // 强制转换为 void指针
+#define cast_num(i)	cast(lua_Number, (i)) // 强制转换为 double
+#define cast_int(i)	cast(int, (i)) // 强制转换为 int
+#define cast_uint(i)	cast(unsigned int, (i)) // 强制转换为unsigned int
+#define cast_byte(i)	cast(lu_byte, (i)) // 强制转换为 unsigned char
+#define cast_uchar(i)	cast(unsigned char, (i)) // 强制转换为 unsigned char
+#define cast_char(i)	cast(char, (i)) // 强制转换为 char
+#define cast_charp(i)	cast(char *, (i)) // 强制转换为 char *
+#define cast_sizet(i)	cast(size_t, (i)) // 强制转换为 unsigned int size_t通常是足够大的非负整数
 
 
 /* cast a signed lua_Integer to lua_Unsigned */

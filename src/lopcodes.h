@@ -195,7 +195,7 @@ enum OpMode {iABC, iABx, iAsBx, iAx, isJ};  /* basic instruction formats 基础�
 
 typedef enum {
 /*----------------------------------------------------------------------
-  name		args	description
+  name		args	description 名字 参数 描述
 ------------------------------------------------------------------------*/
 OP_MOVE,/*	A B	R[A] := R[B]					*/
 OP_LOADI,/*	A sBx	R[A] := sBx					*/
@@ -308,7 +308,7 @@ OP_VARARGPREP,/*A	(adjust vararg parameters)			*/
 OP_EXTRAARG/*	Ax	extra (larger) argument for previous opcode	*/
 } OpCode;
 
-
+// NUM_OPCODES 操作码大小 最后一个指令加1=83 总共有83个指令
 #define NUM_OPCODES	((int)(OP_EXTRAARG) + 1)
 
 
@@ -368,18 +368,21 @@ OP_EXTRAARG/*	Ax	extra (larger) argument for previous opcode	*/
 
 
 /*
-** masks for instruction properties. The format is:
+** masks for instruction properties. The format is: 掩码为指令属性, 格式为
 ** bits 0-2: op mode
 ** bit 3: instruction set register A
 ** bit 4: operator is a test (next instruction must be a jump)
 ** bit 5: instruction uses 'L->top' set by previous instruction (when B == 0)
 ** bit 6: instruction sets 'L->top' for next instruction (when C == 0)
 ** bit 7: instruction is an MM instruction (call a metamethod)
+ * 7  6  5  4 3 2 1 0
+ * mm ot it t a opmode
 */
 
+// extern const unsigned char luaP_opmodes[83];
 LUAI_DDEC(const lu_byte luaP_opmodes[NUM_OPCODES];)
 
-#define getOpMode(m)	(cast(enum OpMode, luaP_opmodes[m] & 7))
+#define getOpMode(m)	(cast(enum OpMode, luaP_opmodes[m] & 7)) // 00001111 & 00000111 获取后三位强制转换成OpMode类型
 #define testAMode(m)	(luaP_opmodes[m] & (1 << 3))
 #define testTMode(m)	(luaP_opmodes[m] & (1 << 4))
 #define testITMode(m)	(luaP_opmodes[m] & (1 << 5))
@@ -394,6 +397,7 @@ LUAI_DDEC(const lu_byte luaP_opmodes[NUM_OPCODES];)
 /* "in top" (uses top from previous instruction) */
 #define isIT(i)		(testITMode(GET_OPCODE(i)) && GETARG_B(i) == 0)
 
+// 给luaP_opmodes[]数组元素赋值, unsigned char类型的数组, 格式在上面
 #define opmode(mm,ot,it,t,a,m)  \
     (((mm) << 7) | ((ot) << 6) | ((it) << 5) | ((t) << 4) | ((a) << 3) | (m))
 
