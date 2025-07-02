@@ -1,6 +1,7 @@
 /*
 ** $Id: lctype.c $
-** 'ctype' functions for Lua ctype函数为lua
+** 'ctype' functions for Lua 
+ctype函数为lua
 ** See Copyright Notice in lua.h
 */
 

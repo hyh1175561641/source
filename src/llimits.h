@@ -1,6 +1,7 @@
 /*
 ** $Id: llimits.h $
-** Limits, basic types, and some other 'installation-dependent' definitions 限制,基本类型,和一些其他安装依赖 定义
+** Limits, basic types, and some other 'installation-dependent' definitions 
+限制,基本类型,和一些其他 安装依赖 定义
 ** See Copyright Notice in lua.h
 */
 

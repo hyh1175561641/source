@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ldo.h": "c",
+        "lua.h": "c",
+        "luaconf.h": "c",
+        "llimits.h": "c"
+    }
+}
