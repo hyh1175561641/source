@@ -1,6 +1,6 @@
 /*
 ** $Id: lstate.h $
-** Global State
+** Global State 全局状态
 ** See Copyright Notice in lua.h
 */
 
@@ -304,7 +304,7 @@ typedef struct global_State {
 
 
 /*
-** 'per thread' state
+** 'per thread' state 每个线程状态
 */
 struct lua_State {
   CommonHeader;

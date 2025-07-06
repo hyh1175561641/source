@@ -4,6 +4,10 @@
         "lua.h": "c",
         "luaconf.h": "c",
         "llimits.h": "c",
-        "lmem.h": "c"
+        "lmem.h": "c",
+        "lprefix.h": "c",
+        "lstate.h": "c",
+        "lzio.h": "c",
+        "locale": "c"
     }
 }

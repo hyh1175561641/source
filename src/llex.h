@@ -1,6 +1,6 @@
 /*
 ** $Id: llex.h $
-** Lexical Analyzer
+** Lexical Analyzer 词法分析器
 ** See Copyright Notice in lua.h
 */
 
@@ -59,8 +59,7 @@ typedef struct Token {
 } Token;
 
 
-/* state of the lexer plus state of the parser when shared by all
-   functions */
+/* state of the lexer plus state of the parser when shared by all functions */ // 词法分析器的状态 加上 解析器的状态 当所有函数共享时
 typedef struct LexState {
   int current;  /* current character (charint) */
   int linenumber;  /* input line counter */

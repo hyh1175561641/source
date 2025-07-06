@@ -965,7 +965,7 @@ int luaD_pcall (lua_State *L, Pfunc func, void *u,
 
 
 /*
-** Execute a protected parser.
+** Execute a protected parser. 执行受保护的解析器
 */
 struct SParser {  /* data to 'f_parser' */
   ZIO *z;

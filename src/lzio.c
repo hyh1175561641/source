@@ -7,17 +7,17 @@
 #define lzio_c
 #define LUA_CORE
 
-#include "lprefix.h"
+#include "lprefix.h" // 前缀
 
 
 #include <string.h>
 
-#include "lua.h"
+#include "lua.h" // lua语言本身
 
-#include "llimits.h"
-#include "lmem.h"
-#include "lstate.h"
-#include "lzio.h"
+#include "llimits.h" // 界限, 基本类型
+#include "lmem.h" // 内存管理接口
+#include "lstate.h" // 全局状态
+#include "lzio.h" // 缓冲流
 
 
 int luaZ_fill (ZIO *z) {
