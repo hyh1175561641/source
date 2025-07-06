@@ -1,6 +1,7 @@
 /*
 ** $Id: luac.c $
-** Lua compiler (saves bytecodes to files; also lists bytecodes) lua编译器(保存字节码到文件,也列出字节码)
+** Lua compiler (saves bytecodes to files; also lists bytecodes) 
+lua编译器(保存字节码到文件,也列出字节码)
 ** See Copyright Notice in lua.h
 */
 

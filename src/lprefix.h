@@ -1,6 +1,7 @@
 /*
 ** $Id: lprefix.h $
-** Definitions for Lua code that must come before any other header file 必须在任何其他头文件之前的lua代码的定义
+** Definitions for Lua code that must come before any other header file 
+必须在任何其他头文件之前的lua代码的定义
 ** See Copyright Notice in lua.h
 */
 

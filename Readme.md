@@ -242,3 +242,164 @@ static const char *const opnames[] = {
   NULL
 };
 ```
+
+
+
+
+# include and depended
+
+```c
+
+
+
+
+#include <assert.h>
+#include <ctype.h>
+#include <errno.h>
+#include <float.h>
+#include <limits.h>
+#include <math.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <io>
+#include <sys/wait.h>
+#include <readline/readline.h>
+#include <readline/history.h>
+#include <windows.h>
+
+
+lprefix.h: No include
+luaconf.h: No include
+ljumptab.h: No include
+lopnames.h: No include
+
+lua.h: luaconf.h
+llimits.h: lua.h
+lopcodes.h: llimits.h
+lualib.h: lua.h
+lauxlib.h: luaconf.h lua.h
+lobject.h llimits.h lua.h
+lfunc.h: lobject.h
+ltable.h: lobject.h
+
+
+
+lstate.h: lua.h lobject.h ltm.h lzio.h
+ldebug.h: lstate.h
+
+
+lapi.h: llimits.h lstate.h
+lcode.h: llex.h lobject.h lopcodes.h lparser.h
+lctype.h: lua.h llimits.h
+ldo.h: llimits.h lobject.h lstate.h lzio.h
+lgc.h: lobject.h lstate.h
+
+
+
+llex.h: lobject.h lzio.h
+lmem.h: llimits.h lua.h
+
+
+lparser.h: llimits.h lobject.h lzio.h
+
+
+lstring.h: lgc.h lobject.h lstate.h
+ltm.h: lobject.h lstate.h
+lua.hpp: lua.h lualib.h lauxlib.h
+lundump.h: llimits.h lobject.h lzio.h
+lvm.h: ldo.h lobject.h ltm.h
+lzio.h: lua.h lmem.h
+
+
+
+
+
+
+lua.c: lprefix.h lua.h lauxlib.h lualib.h
+lapi.c: lprefix.h lua.h lapi.h ldebug.h ldo.h lfunc.h lgc.h lmem.h lobject.h lstate.h lstring.h ltable.h ltm.h lundump.h lvm.h
+lauxlib.c: lprefix.h lua.h lauxlib.h
+lbaselib.c: lprefix.h lua.h lauxlib.h lualib.h
+lcode.c: lprefix.h lua.h lcode.h ldebug.h ldo.h lgc.h llex.h lmem.h lobject.h lopcodes.h lparser.h lstring.h ltable.h lvm.h
+lcorolib.c
+lctype.c
+ldblib.c
+ldebug.c
+ldo.c
+ldump.c
+lfunc.c
+lgc.c
+linit.c
+liolib.c
+llex.c
+lmathlib.c
+lmem.c
+loadlib.c
+lobject.c
+lopcodes.c
+loslib.c
+lparser.c
+lstate.c
+lstring.c
+lstrlib.c
+ltable.c
+ltablib.c
+ltm.c
+luac.c
+lundump.c
+lutf8lib.c: lprefix.h lua.h lauxlib.h lualib.h
+lvm.c: lprefix.h lua.h ldebug.h ldo.h lfunc.h lgc.h lobject.h lopcodes.h lstate.h lstring.h ltable.h ltm.h lvm.h ljumptab.h
+lzio.c: lprefix.h lua.h llimits.h lmem.h lstate.h lzio.h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

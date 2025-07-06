@@ -54,7 +54,7 @@
 #define LUA_ERRERR	5
 
 
-typedef struct lua_State lua_State;
+typedef struct lua_State lua_State; // 在lstate.h中实现
 
 
 /*
@@ -353,7 +353,7 @@ LUA_API int   (lua_next) (lua_State *L, int idx);
 LUA_API void  (lua_concat) (lua_State *L, int n);
 LUA_API void  (lua_len)    (lua_State *L, int idx);
 
-LUA_API size_t   (lua_stringtonumber) (lua_State *L, const char *s);
+LUA_API size_t   (lua_stringtonumber) (lua_State *L, const char *s); //在lapi.c中实现
 
 LUA_API lua_Alloc (lua_getallocf) (lua_State *L, void **ud);
 LUA_API void      (lua_setallocf) (lua_State *L, lua_Alloc f, void *ud);

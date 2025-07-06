@@ -2,20 +2,19 @@
 # I want read this folder all of .c file, and 分析 they depends
 # https://docs.python.org/3.9/library/os
 
-import os
- 
-def traverse_folder(path):
-    for root, dirs, files in os.walk(path):
-        for file in files:
-            # 处理文件
-            print(os.path.join(root, file))
+import os, sys
+
+ldir = os.listdir()
+ldir.sort()
+
+for file in ldir:
+    print(file)
+    pass
 
 
-# traverse_folder("./")
-# print(os.walk)
-# print(os.walk())
-# print(os.walk(""))
-# print(os.walk(""))
-# print(os.walk("./"))
-print(os.listdir)
-print(os.listdir())
+
+# print(len(ldir))
+# print(type(ldir))
+# print(ldir)
+
+print(sys.version_info)

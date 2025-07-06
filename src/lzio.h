@@ -1,6 +1,7 @@
 /*
 ** $Id: lzio.h $
 ** Buffered streams
+缓冲流
 ** See Copyright Notice in lua.h
 */
 
@@ -13,13 +14,14 @@
 #include "lmem.h"
 
 
-#define EOZ	(-1)			/* end of stream */
+#define EOZ	(-1)			/* end of stream 缓冲结束符号*/
 
-typedef struct Zio ZIO;
+typedef struct Zio ZIO; 
+// ZIO定义在下面, 在其他文件中, ZIO的用法是ZIO * Z
 
 #define zgetc(z)  (((z)->n--)>0 ?  cast_uchar(*(z)->p++) : luaZ_fill(z))
 
-
+// size_t unsigned long
 typedef struct Mbuffer {
   char *buffer;
   size_t n;
@@ -59,7 +61,7 @@ struct Zio {
   void *data;			/* additional data */
   lua_State *L;			/* Lua state (for reader) */
 };
-
+// Zio 
 
 LUAI_FUNC int luaZ_fill (ZIO *z);
 
