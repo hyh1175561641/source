@@ -549,7 +549,7 @@
 #if defined(LLONG_MAX)        /* { */
 /* use ISO C99 stuff */
 
-#define LUA_INTEGER        long long
+#define LUA_INTEGER        long long // lua整型就是long long
 #define LUA_INTEGER_FRMLEN    "ll"
 
 #define LUA_MAXINTEGER        LLONG_MAX
@@ -693,7 +693,7 @@
 
 
 #if defined(LUA_CORE) || defined(LUA_LIB)
-/* shorter names for Lua's own use */
+/* shorter names for Lua's own use 较短名字为lua自己使用的 */
 #define l_likely(x)    luai_likely(x)
 #define l_unlikely(x)    luai_unlikely(x)
 #endif

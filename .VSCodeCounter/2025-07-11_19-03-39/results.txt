@@ -1,0 +1,128 @@
+Date : 2025-07-11 19:03:39
+Directory : /Users/yuanhaohou/Documents/GitHub/source
+Total : 86 files,  41576 codes, 5516 comments, 13144 blanks, all 60236 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C        |         43 |     19,091 |      4,670 |      3,550 |     27,311 |
+| HTML     |          6 |     18,146 |         22 |      7,960 |     26,128 |
+| Markdown |          4 |      2,129 |         14 |        683 |      2,826 |
+| C++      |         20 |      1,552 |        740 |        779 |      3,071 |
+| PostCSS  |          6 |        338 |          0 |         74 |        412 |
+| Makefile |          3 |        288 |         64 |         88 |        440 |
+| XML      |          2 |         24 |          0 |          0 |         24 |
+| Python   |          1 |          7 |          6 |          7 |         20 |
+| Lua      |          1 |          1 |          0 |          3 |          4 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                      | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                         |         86 |     41,576 |      5,516 |     13,144 |     60,236 |
+| . (Files)                                                                 |          1 |        296 |          0 |         58 |        354 |
+| .idea                                                                     |          2 |         24 |          0 |          0 |         24 |
+| Markdown                                                                  |          2 |      1,121 |         14 |        486 |      1,621 |
+| doc                                                                       |         14 |     18,606 |         74 |      8,074 |     26,754 |
+| doc (Files)                                                               |          7 |      9,303 |         37 |      4,037 |     13,377 |
+| doc/lua-5.4.6                                                             |          7 |      9,303 |         37 |      4,037 |     13,377 |
+| doc/lua-5.4.6 (Files)                                                     |          1 |         61 |         26 |         20 |        107 |
+| doc/lua-5.4.6/doc                                                         |          6 |      9,242 |         11 |      4,017 |     13,270 |
+| lua                                                                       |          2 |        713 |          0 |        142 |        855 |
+| src                                                                       |         65 |     20,816 |      5,428 |      4,384 |     30,628 |
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                  | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/yuanhaohou/Documents/GitHub/source/.idea/misc.xml                  | XML      |         18 |          0 |          0 |         18 |
+| /Users/yuanhaohou/Documents/GitHub/source/.idea/vcs.xml                   | XML      |          6 |          0 |          0 |          6 |
+| /Users/yuanhaohou/Documents/GitHub/source/Markdown/animejs.com.md         | Markdown |          3 |          0 |          1 |          4 |
+| /Users/yuanhaohou/Documents/GitHub/source/Markdown/vuejs.org.md           | Markdown |      1,118 |         14 |        485 |      1,617 |
+| /Users/yuanhaohou/Documents/GitHub/source/Readme.md                       | Markdown |        296 |          0 |         58 |        354 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/Makefile                    | Makefile |         61 |         26 |         20 |        107 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/contents.html               | HTML     |        646 |          3 |         30 |        679 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/index.css                   | PostCSS  |         18 |          0 |          4 |         22 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/Makefile          | Makefile |         61 |         26 |         20 |        107 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/doc/contents.html | HTML     |        646 |          3 |         30 |        679 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/doc/index.css     | PostCSS  |         18 |          0 |          4 |         22 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/doc/lua.css       | PostCSS  |        133 |          0 |         29 |        162 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/doc/manual.css    | PostCSS  |         18 |          0 |          4 |         22 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/doc/manual.html   | HTML     |      8,129 |          5 |      3,913 |     12,047 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua-5.4.6/doc/readme.html   | HTML     |        298 |          3 |         37 |        338 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/lua.css                     | PostCSS  |        133 |          0 |         29 |        162 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/manual.css                  | PostCSS  |         18 |          0 |          4 |         22 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/manual.html                 | HTML     |      8,129 |          5 |      3,913 |     12,047 |
+| /Users/yuanhaohou/Documents/GitHub/source/doc/readme.html                 | HTML     |        298 |          3 |         37 |        338 |
+| /Users/yuanhaohou/Documents/GitHub/source/lua/l.lua                       | Lua      |          1 |          0 |          3 |          4 |
+| /Users/yuanhaohou/Documents/GitHub/source/lua/lua.md                      | Markdown |        712 |          0 |        139 |        851 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/Makefile                    | Makefile |        166 |         12 |         48 |        226 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/async.py                    | Python   |          7 |          6 |          7 |         20 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/c.c                         | C        |          8 |          0 |          2 |         10 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lapi.c                      | C        |      1,341 |         91 |        113 |      1,545 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lapi.h                      | C++      |         17 |         21 |         15 |         53 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lauxlib.c                   | C        |        908 |        164 |        106 |      1,178 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lauxlib.h                   | C++      |        148 |         55 |         99 |        302 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lbaselib.c                  | C        |        493 |         54 |         44 |        591 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lcode.c                     | C        |      1,218 |        435 |        219 |      1,872 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lcode.h                     | C++      |         65 |         19 |         21 |        105 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lcorolib.c                  | C        |        161 |          9 |         41 |        211 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lctype.c                    | C        |         47 |          7 |         12 |         66 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lctype.h                    | C++      |         41 |         28 |         33 |        102 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ldblib.c                    | C        |        360 |         56 |         68 |        484 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ldebug.c                    | C        |        678 |        136 |        111 |        925 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ldebug.h                    | C++      |         33 |         14 |         17 |         64 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ldo.c                       | C        |        690 |        218 |        117 |      1,025 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ldo.h                       | C        |         48 |         19 |         22 |         89 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ldump.c                     | C        |        168 |         16 |         47 |        231 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lfunc.c                     | C        |        197 |         55 |         43 |        295 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lfunc.h                     | C++      |         26 |         15 |         24 |         65 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lgc.c                       | C        |      1,070 |        455 |        215 |      1,740 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lgc.h                       | C++      |         93 |         58 |         52 |        203 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/linit.c                     | C        |         27 |         25 |         14 |         66 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/liolib.c                    | C        |        562 |        106 |        161 |        829 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ljumptab.h                  | C++      |         97 |          5 |         11 |        113 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/llex.c                      | C        |        458 |         53 |         71 |        582 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/llex.h                      | C++      |         54 |         16 |         21 |         91 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/llimits.h                   | C        |        181 |        112 |         89 |        382 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lmathlib.c                  | C        |        495 |        124 |        146 |        765 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lmem.c                      | C        |        110 |         65 |         41 |        216 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lmem.h                      | C        |         44 |         26 |         24 |         94 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/loadlib.c                   | C        |        468 |        162 |        139 |        769 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lobject.c                   | C        |        436 |         93 |         74 |        603 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lobject.h                   | C++      |        350 |        233 |        233 |        816 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lopcodes.c                  | C        |         89 |         20 |          8 |        117 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lopcodes.h                  | C++      |        192 |        126 |         91 |        409 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lopnames.h                  | C++      |         90 |          6 |          8 |        104 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/loslib.c                    | C        |        284 |         58 |         87 |        429 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lparser.c                   | C        |      1,466 |        261 |        241 |      1,968 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lparser.h                   | C++      |        108 |         36 |         28 |        172 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lprefix.h                   | C        |         19 |         15 |         13 |         47 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lstate.c                    | C        |        353 |         64 |         36 |        453 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lstate.h                    | C        |        188 |        157 |         65 |        410 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lstring.c                   | C        |        189 |         44 |         41 |        274 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lstring.h                   | C++      |         23 |         19 |         16 |         58 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lstrlib.c                   | C        |      1,435 |        211 |        229 |      1,875 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ltable.c                    | C        |        595 |        270 |        116 |        981 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ltable.h                    | C++      |         34 |         13 |         19 |         66 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ltablib.c                   | C        |        291 |         78 |         62 |        431 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ltm.c                       | C        |        203 |         28 |         41 |        272 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/ltm.h                       | C++      |         64 |         19 |         22 |        105 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lua.c                       | C        |        532 |        120 |         68 |        720 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lua.h                       | C        |        253 |        135 |         97 |        485 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lua.hpp                     | C++      |          5 |          4 |          2 |         11 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/luac.c                      | C        |        761 |          8 |         32 |        801 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/luaconf.h                   | C        |        252 |        339 |        213 |        804 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lualib.h                    | C++      |         25 |          7 |         21 |         53 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lundump.c                   | C        |        253 |         25 |         58 |        336 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lundump.h                   | C++      |         15 |         11 |         11 |         37 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lutf8lib.c                  | C        |        212 |         37 |         43 |        292 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lvm.c                       | C        |      1,464 |        292 |        146 |      1,902 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lvm.h                       | C++      |         72 |         35 |         35 |        142 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lzio.c                      | C        |         49 |          6 |         14 |         69 |
+| /Users/yuanhaohou/Documents/GitHub/source/src/lzio.h                      | C        |         35 |         21 |         21 |         77 |
+| Total                                                                     |          |     41,576 |      5,516 |     13,144 |     60,236 |
++---------------------------------------------------------------------------+----------+------------+------------+------------+------------+

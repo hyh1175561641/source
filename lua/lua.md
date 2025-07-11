@@ -654,7 +654,7 @@ lua_xmove
 lua_yield
 lua_yieldk
 
-## auxiliary library
+## auxiliary library 辅助库
 luaL_Buffer
 luaL_Reg
 luaL_Stream

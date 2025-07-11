@@ -101,6 +101,7 @@ static void print_usage(const char *badoption)
 /*
 ** Prints an error message, adding the program name in front of it
 ** (if present)
+打印错误信息, 添加程序名字在他的前面(如果存在)
 */
 static void l_message(const char *pname, const char *msg)
 {
@@ -695,6 +696,8 @@ static int pmain(lua_State *L)
   return 1;
 }
 
+// 整个程序的入口函数
+// 终端输入 lua ./l.lua argc=2, argv[0]=lua, argv[1]=l.lua
 int main(int argc, char **argv)
 {
   int status, result;
@@ -702,7 +705,7 @@ int main(int argc, char **argv)
   if (L == NULL)
   {
     l_message(argv[0], "cannot create state: not enough memory"); // argv[0]=lua
-    return EXIT_FAILURE;
+    return EXIT_FAILURE; // 1 退出失败
   }
   lua_gc(L, LUA_GCSTOP);          /* stop GC while building state */
   lua_pushcfunction(L, &pmain);   /* to call 'pmain' in protected mode */

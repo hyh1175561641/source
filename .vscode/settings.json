@@ -8,6 +8,7 @@
         "lprefix.h": "c",
         "lstate.h": "c",
         "lzio.h": "c",
-        "locale": "c"
+        "locale": "c",
+        "stdarg.h": "c"
     }
 }
