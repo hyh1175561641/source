@@ -88,6 +88,11 @@ typedef LUA_KCONTEXT lua_KContext;
 
 /*
 ** Type for C functions registered with Lua
+
+在lua中注册的c函数类型
+
+类型c函数注册lua
+
 */
 typedef int (*lua_CFunction)(lua_State *L);
 

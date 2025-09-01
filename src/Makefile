@@ -1,8 +1,9 @@
-# Makefile for building Lua
+# Makefile for building Lua makefile为构建lua
 # See ../doc/readme.html for installation and customization instructions.
+# 查看readme.html为安装和定制说明
 
 # == CHANGE THE SETTINGS BELOW TO SUIT YOUR ENVIRONMENT =======================
-
+# 更改以下设置去适应你的环境
 # Your platform. See PLATS for possible values.
 PLAT= guess
 

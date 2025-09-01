@@ -607,6 +607,7 @@ LUA_API const char *lua_pushfstring(lua_State *L, const char *fmt, ...)
   return ret;
 }
 
+// lua推封闭
 LUA_API void lua_pushcclosure(lua_State *L, lua_CFunction fn, int n)
 {
   lua_lock(L);
@@ -1183,7 +1184,7 @@ LUA_API int lua_status(lua_State *L)
 }
 
 /*
-** Garbage-collection function
+** Garbage-collection function 垃圾回收函数
 */
 LUA_API int lua_gc(lua_State *L, int what, ...)
 {

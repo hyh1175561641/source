@@ -643,6 +643,8 @@ static void doREPL(lua_State *L)
 /*
 ** Main body of stand-alone interpreter (to be called in protected mode).
 ** Reads the options and handles them all.
+主体独立的编译器(去调用在保护模式下)
+读取选项 并 处理所有选项
 */
 static int pmain(lua_State *L)
 {
@@ -705,14 +707,15 @@ int main(int argc, char **argv)
   if (L == NULL)
   {
     l_message(argv[0], "cannot create state: not enough memory"); // argv[0]=lua
-    return EXIT_FAILURE; // 1 退出失败
+    return EXIT_FAILURE;                                          // 1 退出失败
   }
-  lua_gc(L, LUA_GCSTOP);          /* stop GC while building state */
-  lua_pushcfunction(L, &pmain);   /* to call 'pmain' in protected mode */
-  lua_pushinteger(L, argc);       /* 1st argument */
-  lua_pushlightuserdata(L, argv); /* 2nd argument */
-  status = lua_pcall(L, 2, 1, 0); /* do the call */
-  result = lua_toboolean(L, -1);  /* get result */
+  // 0
+  lua_gc(L, LUA_GCSTOP);          /* stop GC while building state 停止GC状态当构建时*/
+  lua_pushcfunction(L, &pmain);   /* to call 'pmain' in protected mode 去调用pmain在保护模式*/
+  lua_pushinteger(L, argc);       /* 1st argument 第一个参数*/
+  lua_pushlightuserdata(L, argv); /* 2nd argument 第二个参数*/
+  status = lua_pcall(L, 2, 1, 0); /* do the call 做调用*/
+  result = lua_toboolean(L, -1);  /* get result 得到结果*/
   report(L, status);
   lua_close(L);
   return (result && status == LUA_OK) ? EXIT_SUCCESS : EXIT_FAILURE;
