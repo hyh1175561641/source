@@ -6,6 +6,11 @@ http://luadist.org/ lua binary ???
 https://github.com/LuaDist/Repository lua dist lua包管理系统
 https://studio.zerobrane.com/ lua IDE
 
+
+https://github.com/lichuang/Lua-5.1.4-codedump
+
+
+
 《Lua程序设计》 第四版 巴西Roberto Ierusalimschy著
 
 1* 2*
